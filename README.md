@@ -6,8 +6,10 @@ the template.
 
 ## Project Setup
 
-Run just `npm install` to install all the project dependencies listed
-in this project configuration.
+Install all of the project dependencies with `npm install`. The dependencies are
+stored inside the `package.json` file that's created when someone runs `npm init`.
+
+Run the server with `nodemon index.js`.
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.

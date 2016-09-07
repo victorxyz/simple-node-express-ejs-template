@@ -1,8 +1,8 @@
-# Node Express EJS Templates
-
-Here's a simple sample project that shows off how to set up a static directory,
-serve a CSS file, use an EJS template and use some fancy embedded JavaScript in
-the template.
+# AJAX To-Do List Lab
+We're going to create a To-Do List website. Users will be able
+to add items to a list and their items will be stored on the
+server. Items will stay in the list when the user refreshes
+the page.
 
 ## Project Setup
 

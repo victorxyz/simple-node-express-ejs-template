@@ -1,13 +1,23 @@
-<link rel="stylesheet" href="/style.css">
-<h1>Template</h1>
-<p>The name passed here was: <%= name %></p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/main.js"></script>
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+    <form action="/todos" method="POST">
+      <input type="text" name="item">
+      <button type="submit">add</button>
+    </form>
 
-<ul>
-  <% for (var i = 0; i < 10; i++) { %>
-    <li><%= i * i %></li>
-  <% } %>
-</ul>
-
-<div>
-  <%= 99 / 56 %>
-<div>
+    <!-- Populate the list with items from the server the first time the page loads. -->
+    <ul>
+      <% for (var i = 0; i < todos.length; i++) { %>
+        <li><%= todos[i] %></li>
+      <% } %>
+    </ul>
+  </body>
+</html>
